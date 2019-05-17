@@ -87,8 +87,8 @@ func TestConjuredDecreasesQualityByTwo(t *testing.T) {
 
 // helpers
 func testUpdateQuality(t *testing.T, itemName string, itemSellIn int, itemQuality int, expectedQuality int) {
-	var items = []*Item{
-		&Item{itemName, itemSellIn, itemQuality},
+	var items = []Item{
+		Item{itemName, itemSellIn, itemQuality},
 	}
 
 	GildedRose(items)
@@ -99,8 +99,8 @@ func testUpdateQuality(t *testing.T, itemName string, itemSellIn int, itemQualit
 }
 
 func testUpdateSellIn(t *testing.T, itemName string, itemSellIn int, itemQuality int, expectedSellIn int) {
-	var items = []*Item{
-		&Item{itemName, itemSellIn, itemQuality},
+	var items = []Item{
+		Item{itemName, itemSellIn, itemQuality},
 	}
 
 	GildedRose(items)
